@@ -20,14 +20,14 @@ echo
 echo "*********************************************"
 echo " Tu IP Publica es la: " `curl -s http:/ifconfig.me`
 echo " Tu IP Local es la: " `hostname -I`
-echo " Tu MAC es la: " `cat /sys/class/net/eth0/address`
+echo " Tu MAC es la: " `cat /sys/class/net/*/address`
 echo "*********************************************"
 echo
 read	-p "Quieres hacer una prueba de velocidad? (Si/No): " opc
 echo
 	if [ $opc = Si ]
 		then
-			speedtest-cli --simple
+			speedtest -a
 		else
 			bash the_script.sh
 	fi
