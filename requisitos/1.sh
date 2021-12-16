@@ -27,7 +27,7 @@ read	-p "Quieres hacer una prueba de velocidad? (Si/No): " opc
 echo
 	if [ $opc = Si ]
 		then
-			speedtest -a
+			speedtest --simple
 		else
 			bash the_script.sh
 	fi
