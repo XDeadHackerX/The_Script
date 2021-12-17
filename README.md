@@ -1,4 +1,9 @@
-Herramienta creada por XDeadHackerX
+The_Script
+
+> Herramienta creada por XDeadHackerX
+
+[![The-Script-2-0.png](https://i.postimg.cc/nLGQ0SMP/The-Script-2-0.png)](https://postimg.cc/hJhjGrLL)
+
 
 Instalar Herramienta:
 
