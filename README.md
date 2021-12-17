@@ -4,6 +4,7 @@ The_Script
 
 [![The-Script-2-0.png](https://i.postimg.cc/nLGQ0SMP/The-Script-2-0.png)](https://postimg.cc/hJhjGrLL)
 
+/requisitos/The_Script_2.0.png
 
 Instalar Herramienta:
 
