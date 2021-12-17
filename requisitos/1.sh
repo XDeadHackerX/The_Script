@@ -1,3 +1,5 @@
+#!bin/bash
+
 clear
 echo
 echo
@@ -8,7 +10,7 @@ echo "	       ░░░██║░░░██╔══██║██╔══
 echo "	       ░░░██║░░░██║░░██║███████╗██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░"
 echo "	       ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░"
 echo 
-echo "		     		   Create for: XDeadHackerX v1.0"
+echo "		     		   Create for: XDeadHackerX v2.0"
 echo "	-----------------------------------------------------------------------------------"
 echo " 	Any actions and or activities related to The_Script is solely your responsibility"
 echo "	-----------------------------------------------------------------------------------"

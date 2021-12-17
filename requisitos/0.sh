@@ -5,6 +5,9 @@ sudo apt-get install cat
 sudo apt-get install hostname
 sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
 sudo apt-get install speedtest
+sudo apt-get install whatweb
+sudo apt-get install whois
+sudo apt-get install dmitry
 sudo apt-get install python3
 
 cd requisitos && sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
