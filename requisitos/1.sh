@@ -29,7 +29,22 @@ read	-p "Quieres hacer una prueba de velocidad? (Si/No): " opc
 echo
 	if [ $opc = Si ]
 		then
-			speedtest --simple
+			echo
+			echo ¿Que Sistema Operativo usas?
+			echo ----------------------------
+			echo 1-Kali Linux
+			echo 2-Ubuntu/Debian
+			echo ----------------------------
+			read -p "Elige una opcion: " opc2
+				case $opc2 in
+						1 )	echo
+							speedtest --simple
+							;;
+						2 )	echo
+							speedtest -a
+							;;
+						* )	echo $RRPLY no es una opcion valida
+				esac
 		else
 			bash the_script.sh
 	fi
@@ -39,8 +54,8 @@ echo "1-Volver al Menu"
 echo "2-Salir"
 echo -------------------
 echo
-read -p "Elige una opcion: " opc2
-	case $opc2 in
+read -p "Elige una opcion: " opc3
+	case $opc3 in
 			1 )	bash the_script.sh
 				;;
 			2 )	exit && clear
