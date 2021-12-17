@@ -9,7 +9,7 @@ Instalar Herramienta:
 
 1) git clone https://github.com/XDeadHackerX/The_Script.git
 
-2) cd the_script
+2) cd The_Script
 
 3) chmod 777 the_script.sh
 
