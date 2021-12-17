@@ -49,7 +49,7 @@ echo "**************************************************************************
 echo
 echo "							Whois"
 echo
-echo "* Registry: hace referencia a la empresa que administra la lista donde se aloja un conjunto de nombres de dominio"
+echo "*Registry: hace referencia a la empresa que administra la lista donde se aloja un conjunto de nombres de dominio"
 echo "*Registrant: es el propietario legal del dominio"
 echo "*Registrar: hace uso de un registrador para realizar el registro"
 echo
