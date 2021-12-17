@@ -4,7 +4,6 @@ The_Script
 
 [![The-Script-2-0.png](https://i.postimg.cc/nLGQ0SMP/The-Script-2-0.png)](https://postimg.cc/hJhjGrLL)
 
-/requisitos/The_Script_2.0.png
 
 Instalar Herramienta:
 
@@ -16,6 +15,6 @@ Instalar Herramienta:
 
 4) bash the_script.sh
 
-5) Una vez dentro marcamos el 0 para que nos instale todas las herramientas necesarias
+5) Una vez dentro marcamos el Numero 0 para que nos instale todas las herramientas necesarias
 
-6) Ya podremos disfrutar de la herramienta
+6) Ya podemos disfrutar de la herramienta
