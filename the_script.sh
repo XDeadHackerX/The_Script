@@ -1,4 +1,4 @@
-#bin/bash
+#!bin/bash
 
 clear
 echo
@@ -9,27 +9,27 @@ echo "	       ░░░██║░░░███████║█████
 echo "	       ░░░██║░░░██╔══██║██╔══╝░░░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░"
 echo "	       ░░░██║░░░██║░░██║███████╗██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░"
 echo "	       ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░"
-echo 
-echo "		     		   Create for: XDeadHackerX v2.0"
-echo "	-----------------------------------------------------------------------------------"
-echo " 	Any actions and or activities related to The_Script is solely your responsibility"
-echo "	-----------------------------------------------------------------------------------"
 echo
-echo "   -------------------------------------------------------------------------------------------"
-echo "   Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
-echo "   -------------------------------------------------------------------------------------------"
+echo "				           (⌐■_■)– ︻デ═一"
+echo "			 __________________________________________________"					
+echo "		     	   ︻デ═一  Created by: XDeadHackerX v3.0  ︻デ═一 " 
+echo "     -------------------------------------------------------------------------------------------"
+echo "     Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
+echo "     -------------------------------------------------------------------------------------------"
 echo
-echo "		     -----------------------------------------------"
-echo "		     Elige una de las siguientes opciones: "
-echo "		     0-Instalar requisitos"
-echo "		     1-Informacion sobre tarjeta de Red + Velocidad"
-echo "		     2-Informacion de una web"
-echo "		     3-Informacion de un numero de Telefono"
-echo "		     4-Encontrar Redes Sociales"
-echo "		     5-Salir"
-echo "		     -----------------------------------------------"
 echo
-read -p " Elige una opcion: " opc
+echo "	[*] Elige una de las siguientes opciones: "
+echo "	------------------------------------------------------------------------------------"
+echo "	0º Instalar requisitos        		                (Marcar la 1º vez)	    "
+echo "	1º Informacion sobre la tarjeta de Red + Velocidad	(Informacion importante)    "
+echo "	2º Informacion de una Pagina Web		        (OSINT)			    "
+echo "	3º Informacion de un numero de Telefono  		(Funciona mal)		    "
+echo "	4º Encontrar Redes Sociales    			        (No es certero al 100%)	    "
+echo "	5º Metadatos		               	                (Extraerlos y o eliminarlos)"
+echo "	6º ☢Salir☢					        (Salir del programa)	    "
+echo "	------------------------------------------------------------------------------------"
+echo
+read -p " [*] Elige una opcion: " opc
 	case $opc in
 			0 )	bash requisitos/0.sh
 				;;
@@ -41,5 +41,7 @@ read -p " Elige una opcion: " opc
 				;;
 			4 )	bash requisitos/4.sh
 				;;
-			5 )	exit
+			5 )	bash requisitos/5.sh
+				;;
+			6 )	exit
 	esac
