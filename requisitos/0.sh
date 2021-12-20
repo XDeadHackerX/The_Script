@@ -1,4 +1,4 @@
-#bin/bash
+#!bin/bash
 
 sudo apt-get install curl
 sudo apt-get install cat
@@ -9,6 +9,7 @@ sudo apt-get install whatweb
 sudo apt-get install whois
 sudo apt-get install dmitry
 sudo apt-get install python3
+sudo apt-get install exiftool
 
 cd requisitos && sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
 
