@@ -20,3 +20,11 @@ Instalar Herramienta:
 6) Una vez dentro marcamos el Numero 0 para que nos instale todas las herramientas necesarias
 
 7) Ya podemos disfrutar de la herramienta
+
+# Versiones
+
+(v1.0) --->   Version Original
+
+(v2.0) --->   Nuevo apartado (Informacion de una web), Correcion de errores
+
+(v3.0) --->   Nuevo apartado (Metadatos), Cambios en el diseño (Renovacion a la hora de ver el Script y leer los apartados)
