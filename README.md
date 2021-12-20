@@ -5,7 +5,7 @@ The_Script
 [![The-Script-3-0.png](https://i.postimg.cc/tT8Nj9Dp/The-Script-3-0.png)](https://postimg.cc/k6FbN3kp)
 
 
-## Instalar Herramienta:
+## Instalar Herramienta
 
 1) sudo apt-get install git
 
