@@ -11,23 +11,33 @@ sudo apt-get install dmitry
 sudo apt-get install python3
 sudo apt-get install exiftool
 
-cd requisitos && sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
+cd requisitos
 
-sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip && cd ..
+sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
+
+sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip
+
+if [ -d requisitos/theHarvester ]
+	then
+		sudo rm -r theHarvester && sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
+	else 
+		sudo git clone https://github.com/sherlock-project/sherlock.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
+		
+fi
 
 if [ -d requisitos/sherlock ]
 	then
-		cd requisitos && sudo rm -r sherlock && sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock 			&& sudo chmod 777 sherlock.py && cd .. && cd .. && cd ..
+		sudo rm -r sherlock && sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock 			&& sudo chmod 777 sherlock.py && cd .. && cd ..
 	else 
-		cd requisitos && sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 			sherlock.py && cd .. && cd .. && cd ..
+		sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 sherlock.py && cd .. && cd ..
 		
 fi
 
 if [ -d requisitos/phoneinfoga ] 
 	then
-		cd requisitos && sudo rm -r phoneinfoga && sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version && cd ..
+		sudo rm -r phoneinfoga && sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version
 	else
-		cd requisitos && sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version && cd ..
+		sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version
 fi
 
-bash the_script.sh
+cd .. && bash the_script.sh

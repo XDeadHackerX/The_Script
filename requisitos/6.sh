@@ -16,40 +16,36 @@ echo "		     	   ︻デ═一  Created by: XDeadHackerX v4.0  ︻デ═一 "
 echo "     -------------------------------------------------------------------------------------------"
 echo "     Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
 echo "     -------------------------------------------------------------------------------------------"
+echo 
 echo
+echo " [*] Informacion de una Empresa"
 echo
-echo " [*] Informacion sobre la tarjeta de Red + Velocidad"
+echo " ========================================="
+echo " 1º Extraer Correos Electronicos""         |"
+echo " -----------------------------------------"
+echo " 2º Extraer Lista de Trabajadores""        |"
+echo " -----------------------------------------"
+echo " 3º Extraer todos los Dominios""           |"
+echo " ========================================="
 echo
-echo " ===================================================="
-echo " ☢ Tu IP Publica es la: " `curl -s http:/ifconfig.me`
-echo " ☢ Tu IP Local es la: " `hostname -I`
-echo " ☢ Tu DNS: " `cat /etc/resolv.conf`    
-echo " ☢ Tu MAC es la: " `cat /sys/class/net/*/address`
-echo " ===================================================="
-echo
-echo
-read -p " Quieres hacer una prueba de velocidad? (si/no): " opc
-echo
-	if [ $opc = si ]
-		then
-			echo " ¿Que Sistema Operativo usas?"
-			echo " ----------------------------"
-			echo " 1-Kali Linux"
-			echo " 2-Ubuntu/Debian"
-			echo " ----------------------------"
-			read -p " Elige una opcion: " opc2
-				case $opc2 in
-						1 )	echo
-							speedtest --simple
-							;;
-						2 )	echo
-							speedtest -a
-							;;
-						* )	echo $RRPLY no es una opcion valida
-				esac
-		else
-			bash the_script.sh
-	fi
+read -p " Elige una opcion: " opc
+	case $opc in
+			1 )	read -p " Escibe la web de la empresa (dominio.com): " opc1
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc1 -l 100 -b google
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc1 -l 100 -b bing
+				;;
+			2 )	read -p " Escibe el nombre del archivo con su ruta (dominio.com): " opc2
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc2 -l 100 -b linkedin
+				;;
+			3 )	read -p " Escibe el nombre del archivo con su ruta (dominio.com): " opc3
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b rocketreach
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b pentesttools
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b omnisint
+				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b dnsdumpster
+				;;
+			* )	echo
+				echo "$RRPLY No es una opcion valida"
+	esac
 echo
 echo " ==================="
 echo " 1-Volver al Menu"
@@ -57,11 +53,11 @@ echo " 2-Volver a ejecutar"
 echo " 3-Salir"
 echo " ==================="
 echo
-read -p "Elige una opcion: " opc3
-	case $opc3 in
+read -p " Elige una opcion: " opc4
+	case $opc4 in
 			1 )	bash the_script.sh
 				;;
-			2 )	bash requisitos/1.sh
+			2 )	bash requisitos/6.sh
 				;;
 			3 )	exit && clear
 				;;

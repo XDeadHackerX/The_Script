@@ -12,7 +12,7 @@ echo "	       ░░░╚═╝░░░╚═╝░░╚═╝╚════
 echo
 echo "				           (⌐■_■)– ︻デ═一"
 echo "			 __________________________________________________"					
-echo "		     	   ︻デ═一  Created by: XDeadHackerX v3.0  ︻デ═一 " 
+echo "		     	   ︻デ═一  Created by: XDeadHackerX v4.0  ︻デ═一 " 
 echo "     -------------------------------------------------------------------------------------------"
 echo "     Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
 echo "     -------------------------------------------------------------------------------------------"
