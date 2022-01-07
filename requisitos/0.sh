@@ -28,15 +28,15 @@ if [ -d requisitos/theHarvester ]
 		sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
 		
 fi
-
+cd ..
 if [ -d requisitos/sherlock ]
 	then
-		sudo rm -r sherlock && sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock 			&& sudo chmod 777 sherlock.py && cd .. && cd ..
+		sudo rm -r sherlock && sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 sherlock.py
 	else 
-		sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 sherlock.py && cd .. && cd ..
+		sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 sherlock.py
 		
 fi
-
+cd .. && cd ..
 if [ -d requisitos/phoneinfoga ] 
 	then
 		sudo rm -r phoneinfoga && sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version
