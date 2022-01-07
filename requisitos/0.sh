@@ -23,9 +23,9 @@ sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/py
 
 if [ -d requisitos/theHarvester ]
 	then
-		sudo rm -r theHarvester && sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
+		sudo rm -r theHarvester && sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && sudo pip install aiohttp && sudo pip install aiodns && cd ..
 	else 
-		sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
+		sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && sudo pip install aiohttp && sudo pip install aiodns && cd ..
 		
 fi
 cd ..
