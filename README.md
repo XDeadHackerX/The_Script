@@ -28,3 +28,5 @@ The_Script
 (v2.0) --->   Nuevo apartado (Informacion de una web), Correcion de errores
 
 (v3.0) --->   Nuevo apartado (Metadatos), Cambios en el diseño (Renovacion a la hora de ver el Script y leer los apartados)
+
+(v4.0) --->   Nuevo apartado (Informacion de una empresa), Mejoras en el diseño, Correcion de errores
