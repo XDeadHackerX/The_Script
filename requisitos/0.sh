@@ -3,6 +3,7 @@
 sudo apt-get install curl
 sudo apt install python-pip
 sudo apt install python3-pip
+sudo apt install git
 sudo apt-get install cat
 sudo apt-get install hostname
 sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
