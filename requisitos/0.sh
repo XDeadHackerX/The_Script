@@ -14,6 +14,14 @@ sudo apt-get install whois
 sudo apt-get install dmitry
 sudo apt-get install python3
 sudo apt-get install exiftool
+sudo pip install aiohttp
+sudo pip install aiodns
+pip install shodan
+pip install aiosqlite
+pip install ujson
+pip install netaddr
+pip install uvloop
+pip install aiomultiprocess
 
 cd requisitos
 
@@ -23,9 +31,9 @@ sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/py
 
 if [ -d requisitos/theHarvester ]
 	then
-		sudo rm -r theHarvester && sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && sudo pip install aiohttp && sudo pip install aiodns && pip install shodan && pip install aiosqlite && pip install ujson && pip install netaddr && pip install uvloop && pip install aiomultiprocess && python3 setup.py install && cd ..
+		sudo rm -r theHarvester && sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
 	else 
-		sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && sudo pip install aiohttp && sudo pip install aiodns && pip install shodan && pip install aiosqlite && pip install ujson && pip install netaddr && pip install uvloop && pip install aiomultiprocess && python3 setup.py install && cd ..
+		sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && python3 setup.py install && cd ..
 		
 fi
 cd ..
