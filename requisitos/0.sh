@@ -17,12 +17,12 @@ sudo apt-get install exiftool
 sudo apt-get install -y netdiscover
 sudo pip install aiohttp
 sudo pip install aiodns
-pip install shodan
-pip install aiosqlite
-pip install ujson
-pip install netaddr
-pip install uvloop
-pip install aiomultiprocess
+sudo pip install shodan
+sudo pip install aiosqlite
+sudo pip install ujson
+sudo pip install netaddr
+sudo pip install uvloop
+sudo pip install aiomultiprocess
 
 cd requisitos
 
