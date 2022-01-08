@@ -30,3 +30,5 @@ The_Script
 (v3.0) --->   Nuevo apartado (Metadatos), Cambios en el diseño (Renovacion a la hora de ver el Script y leer los apartados)
 
 (v4.0) --->   Nuevo apartado (Informacion de una empresa), Mejoras en el diseño, Correcion de errores
+
+(v5.0) --->   Nuevo apartado (Escanear nuestra red), Mejoras en el apartado de (Informacion de una empresa), Mejoras en la eficiencia del codigo.
