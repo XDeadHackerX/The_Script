@@ -1,8 +1,6 @@
 #!bin/bash
 
 sudo apt-get install curl
-sudo apt install python-pip
-sudo apt install python3-pip
 sudo apt install git
 sudo apt-get install cat
 sudo apt-get install hostname
