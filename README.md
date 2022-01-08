@@ -31,4 +31,4 @@ The_Script
 
 (v4.0) --->   Nuevo apartado (Informacion de una empresa), Mejoras en el diseño, Correcion de errores
 
-(v5.0) --->   Nuevo apartado (Escanear nuestra red), Mejoras en el apartado de (Informacion de una empresa), Mejoras en la eficiencia del codigo, Mejoras en el diseño, Cambios en el aparatado (Informacion de una Pagina Web).
+(v5.0) --->   Nuevo apartado (Escanear nuestra red), Mejoras en el apartado de (Informacion de una empresa), Mejoras en la eficiencia del codigo, Mejoras en el diseño, Cambios en el aparatado (Informacion de una Pagina Web), Eliminacion de apartado (Informacion de un numero de telefono) por su mal funcionamiento.
