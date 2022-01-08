@@ -20,8 +20,10 @@ echo
 echo
 echo " [*] Encontrar Redes Sociales"
 echo
+echo " -----------------------------------------------------------------------------------------------"
 read -p " Pon uno de los siguientes datos del objetivo [Nombre completo o Correo electrónico o Nick 
  o Número de Teléfono o Red Social] : " info
+echo " -----------------------------------------------------------------------------------------------"
 echo
 python3 requisitos/sherlock/sherlock/sherlock.py $info
 echo
