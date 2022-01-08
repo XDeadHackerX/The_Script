@@ -38,8 +38,6 @@ read -p " Elige una opcion: " opc
 				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc2 -l 100 -b linkedin
 				;;
 			3 )	read -p " Escibe el nombre del archivo con su ruta (dominio.com): " opc3
-				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b rocketreach
-				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b pentesttools
 				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b omnisint
 				sudo python3 requisitos/theHarvester/theHarvester.py -d $opc3 -l 100 -b dnsdumpster
 				;;
