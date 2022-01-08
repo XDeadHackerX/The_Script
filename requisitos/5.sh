@@ -3,41 +3,36 @@
 clear
 echo
 echo
-echo "	       ████████╗██╗░░██╗███████╗░██████╗░█████╗░██████╗░██╗██████╗░████████╗"
-echo "	       ╚══██╔══╝██║░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝"
-echo "	       ░░░██║░░░███████║█████╗░░╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░"
-echo "	       ░░░██║░░░██╔══██║██╔══╝░░░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░"
-echo "	       ░░░██║░░░██║░░██║███████╗██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░"
-echo "	       ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░"
+echo "	           ████████╗██╗░░██╗███████╗░██████╗░█████╗░██████╗░██╗██████╗░████████╗"
+echo "	           ╚══██╔══╝██║░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗██║██╔══██╗╚══██╔══╝"
+echo "	           ░░░██║░░░███████║█████╗░░╚█████╗░██║░░╚═╝██████╔╝██║██████╔╝░░░██║░░░"
+echo "	           ░░░██║░░░██╔══██║██╔══╝░░░╚═══██╗██║░░██╗██╔══██╗██║██╔═══╝░░░░██║░░░"
+echo "	           ░░░██║░░░██║░░██║███████╗██████╔╝╚█████╔╝██║░░██║██║██║░░░░░░░░██║░░░"
+echo "	           ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝╚═╝░░░░░░░░╚═╝░░░"
 echo
-echo "				           (⌐■_■)– ︻デ═一"
-echo "			 __________________________________________________"					
-echo "		     	   ︻デ═一  Created by: XDeadHackerX v4.0  ︻デ═一 " 
-echo "     -------------------------------------------------------------------------------------------"
-echo "     Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
-echo "     -------------------------------------------------------------------------------------------"
+echo "				               (⌐■_■)– ︻デ═一"
+echo "			     __________________________________________________"					
+echo "		     	       ︻デ═一  Created by: XDeadHackerX v5.0  ︻デ═一 " 
+echo "         -------------------------------------------------------------------------------------------"
+echo "         Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
+echo "         -------------------------------------------------------------------------------------------"
+echo 
 echo
+echo " [*] Escanear nuestra red"
 echo
-echo " [*] Metadatos"
+echo " ==================================================="
+echo " 1º Ver los Host conectados a la Red (1 min)""       |"
+echo " ---------------------------------------------------"
+echo " 2º Ver los puertos abiertos de cada Host (10 min)"" |"
+echo " ==================================================="
 echo
-echo " ========================================="
-echo " 1º Extraer Metadatos de un fichero""      |"
-echo " -----------------------------------------"
-echo " 2º Eliminar Metadatos de un fichero""     |"
-echo " -----------------------------------------"
-echo " 3º Eliminar Metadatos de un directorio""  |"
-echo " ========================================="
-echo
-read -p " Elige una opcion: " opc
-	case $opc in
-			1 )	read -p " Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " meta
-				sudo exiftool -v -s -G $meta
+read -p " Elige una opcion: " opc1
+	case $opc1 in
+			1 )	read -p " Escribe la Ip del router (192.168.1.1 o 192.168.0.1): " opc2
+				netdiscover -r $opc2
 				;;
-			2 )	read -p " Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " meta
-				sudo exiftool -r -overwrite_original -all= $meta
-				;;
-			3 )	read -p " Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/prueba/): " meta
-				sudo exiftool -r -overwrite_original -all= $meta
+			2 )	read -p " Escribe la Ip del router (192.168.1.1 o 192.168.0.1): " opc2
+				nmap -sV -O $opc2/24
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
@@ -49,8 +44,8 @@ echo " 2-Volver a ejecutar"
 echo " 3-Salir"
 echo " ==================="
 echo
-read -p " Elige una opcion: " opc2
-	case $opc2 in
+read -p " Elige una opcion: " opc3
+	case $opc3 in
 			1 )	bash the_script.sh
 				;;
 			2 )	bash requisitos/5.sh
@@ -60,4 +55,5 @@ read -p " Elige una opcion: " opc2
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
 	esac
+
 				

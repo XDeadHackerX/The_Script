@@ -14,6 +14,7 @@ sudo apt-get install whois
 sudo apt-get install dmitry
 sudo apt-get install python3
 sudo apt-get install exiftool
+sudo apt-get install -y netdiscover
 sudo pip install aiohttp
 sudo pip install aiodns
 pip install shodan
@@ -43,13 +44,6 @@ if [ -d requisitos/sherlock ]
 	else 
 		sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 sherlock.py
 		
-fi
-cd .. && cd ..
-if [ -d requisitos/phoneinfoga ] 
-	then
-		sudo rm -r phoneinfoga && sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version
-	else
-		sudo curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install | bash && ./phoneinfoga version
 fi
 
 cd .. && bash the_script.sh
