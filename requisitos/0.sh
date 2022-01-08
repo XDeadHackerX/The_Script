@@ -1,6 +1,8 @@
 #!bin/bash
 
 sudo apt-get install curl
+sudo apt install python-pip
+sudo apt install python3-pip
 sudo apt install git
 sudo apt-get install cat
 sudo apt-get install hostname
@@ -15,12 +17,12 @@ sudo apt-get install exiftool
 sudo apt-get install -y netdiscover
 sudo pip install aiohttp
 sudo pip install aiodns
-sudo pip install shodan
-sudo pip install aiosqlite
-sudo pip install ujson
-sudo pip install netaddr
-sudo pip install uvloop
-sudo pip install aiomultiprocess
+pip install shodan
+pip install aiosqlite
+pip install ujson
+pip install netaddr
+pip install uvloop
+pip install aiomultiprocess
 
 cd requisitos
 
