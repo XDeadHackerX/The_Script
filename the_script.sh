@@ -27,7 +27,7 @@ echo "	3º Informacion de una Empresa				(Emails/Trabajadores/Dominios)      "
 echo "	4º Encontrar Redes Sociales    			        (No es certero al 100%)	            "
 echo "	5º Escanear nuestra red		               	        (Ver los host conectados)           "
 echo "	6º Metadatos		               	                (Extraerlos y o eliminarlos)        "
-echo "	8º ☢Salir☢					        (Salir del programa)	            "
+echo "	7º ☢Salir☢					        (Salir del programa)	            "
 echo "	--------------------------------------------------------------------------------------------"
 echo
 read -p " [*] Elige una opcion: " opc
