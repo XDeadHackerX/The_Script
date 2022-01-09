@@ -7,6 +7,7 @@ sudo apt-get install hostname
 sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
 sudo apt-get install speedtest
 sudo pip install speedtest-cli
+sudo apt-get install nmap
 sudo apt-get install whatweb
 sudo apt-get install whois
 sudo apt-get install dmitry
