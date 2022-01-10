@@ -43,7 +43,7 @@ read -p " Elige una opcion: " opc1
 			3 )	echo " Pon uno de los siguientes datos del Objetivo [Nombre completo o Correo electrónico o Nick  o Número de Teléfono o Red Social]"
 				echo
 				sleep 2
-				sudo bash requisitos/userrecon/userrecon.sh $info
+				sudo bash requisitos/userrecon.sh $info
 				echo
 				echo "[*] Los .txt con la informacion substraida se encuentra en la ruta (the_script/$info.txt)"
 				;;
