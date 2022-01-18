@@ -2,7 +2,7 @@ The_Script
 
 > Herramienta creada por XDeadHackerX
 
-[![The-Script-6-0.png](https://i.postimg.cc/Z5H0D2jH/The-Script-6-0.png)](https://postimg.cc/sMBVMnkG)
+[![The-Script-7-0.png](https://i.postimg.cc/BQ1tYytS/The-Script-7-0.png)](https://postimg.cc/6yt9TMdg)
 
 
 ## Instalar Herramienta
@@ -34,3 +34,5 @@ The_Script
 (v5.0) --->   Nuevo apartado (Escanear nuestra red), Mejoras en el apartado de (Información de una empresa), Mejoras en la eficiencia del código, Mejoras en el diseño, Cambios en el apartado (Información de una Página Web), Eliminación de apartado (Información de un número de teléfono) por su mal funcionamiento.
 
 (v6.0) --->   Nuevos apartados dentro del apartado (Informacion de una Persona), se agregó un apartado para extraer Información de una cuenta de Instagram, Ver donde está registrado un Email y se solucionó el sub apartado de "Buscar la URL de las redes sociales donde está registrado un Email".
+
+(v7.0) --->   Nuevo apartado (Desencriptar un fichero).
