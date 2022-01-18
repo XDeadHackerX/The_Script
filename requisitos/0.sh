@@ -16,6 +16,7 @@ sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
 sudo apt-get install speedtest
 sudo pip install speedtest-cli
 sudo pip3 install holehe
+sudo apt-get install john
 sudo apt-get install nmap
 sudo apt-get install whatweb
 sudo apt-get install whois
