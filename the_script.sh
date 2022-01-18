@@ -43,9 +43,9 @@ read -p " [*] Elige una opcion: " opc
 				;;
 			4 )	bash requisitos/4.sh
 				;;
-			5 )	bash requisitos/6.sh
+			5 )	bash requisitos/5.sh
 				;;
-			6 )	bash requisitos/5.sh
+			6 )	bash requisitos/6.sh
 				;;
 			7 )	bash requisitos/7.sh
 				;;
