@@ -166,7 +166,7 @@ read -p " Elige una opcion: " opc2
 	case $opc2 in
 			1 )	bash the_script.sh
 				;;
-			2 )	bash requisitos/6.sh
+			2 )	bash requisitos/5.sh
 				;;
 			3 )	exit && clear
 				;;
