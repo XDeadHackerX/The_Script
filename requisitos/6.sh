@@ -48,7 +48,7 @@ read -p " Elige una opcion: " opc3
 	case $opc3 in
 			1 )	bash the_script.sh
 				;;
-			2 )	bash requisitos/5.sh
+			2 )	bash requisitos/6.sh
 				;;
 			3 )	exit && clear
 				;;
