@@ -2,6 +2,8 @@
 
 cd requisitos
 
+sudo apt-get update
+
 sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
 
 sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip
@@ -24,14 +26,8 @@ sudo apt-get install dmitry
 sudo apt-get install python3
 sudo apt-get install exiftool
 sudo apt-get install -y netdiscover
-sudo pip install aiohttp
-sudo pip install aiodns
 sudo pip install shodan
-sudo pip install aiosqlite
-sudo pip install ujson
-sudo pip install netaddr
-sudo pip install uvloop
-sudo pip install aiomultiprocess
+
 
 sudo rm -r theHarvester
 
@@ -39,9 +35,6 @@ sudo rm -r sherlock
 
 sudo rm -r osi.ig
 
-cd ..
-
-cd requisitos
 
 sudo git clone https://github.com/th3unkn0n/osi.ig.git && cd osi.ig && sudo chmod 777 requirements.txt && python3 -m pip install -r requirements.txt
 
