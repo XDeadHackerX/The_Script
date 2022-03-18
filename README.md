@@ -7,19 +7,21 @@ The_Script
 
 ## Instalar Herramienta
 
-1) sudo apt-get install git
+1) sudo apt update && apt -y full-upgrade
 
-2) git clone https://github.com/XDeadHackerX/The_Script.git
+2) sudo apt-get install git
 
-3) cd The_Script
+3) git clone https://github.com/XDeadHackerX/The_Script.git
 
-4) chmod 777 the_script.sh
+4) cd The_Script
 
-5) bash the_script.sh
+5) chmod 777 the_script.sh
 
-6) Una vez dentro marcamos el Número  0 para que nos instale todas las herramientas necesarias
+6) bash the_script.sh
 
-7) Ya podemos disfrutar de la herramienta
+7) Una vez dentro marcamos el Número  0 para que nos instale todas las herramientas necesarias
+
+8) Ya podemos disfrutar de la herramienta
 
 ## Versiones
 
