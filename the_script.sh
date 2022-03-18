@@ -12,7 +12,7 @@ echo "	           ░░░╚═╝░░░╚═╝░░╚═╝╚══�
 echo
 echo "				               (⌐■_■)– ︻デ═一"
 echo "			     __________________________________________________"					
-echo "		     	       ︻デ═一  Created by: XDeadHackerX v7.0  ︻デ═一 " 
+echo "		     	       ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
 echo "         -------------------------------------------------------------------------------------------"
 echo "         Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
 echo "         -------------------------------------------------------------------------------------------"
@@ -25,10 +25,11 @@ echo "	1º Informacion sobre la tarjeta de Red + Velocidad	(Toda la Informacion 
 echo "	2º Informacion de una Pagina Web		        (Info Tecnologias y del Propietario) "
 echo "	3º Informacion de una Empresa				(Emails/Trabajadores/Dominios)       "
 echo "	4º Informacion de una Persona    			(Instagram/Email/Nick)	             "
-echo "	5º Desencriptar un fichero		               	(Desencriptar un .zip, .rar, fichero)"
-echo "	6º Escanear nuestra red		               	        (Ver los host conectados)            "
-echo "	7º Metadatos		               	                (Extraerlos y o eliminarlos)         "
-echo "	8º ☢Salir☢					        (Salir del programa)	             "
+echo "	5º Ataque de Diccionario a IP		                (Extraer Usuario y Contraseña IP)    "
+echo "	6º Desencriptar un fichero		               	(Desencriptar un .zip, .rar, fichero)"
+echo "	7º Escanear nuestra red		               	        (Ver los host conectados)            "
+echo "	8º Metadatos		               	                (Extraerlos y o eliminarlos)         "            
+echo "	9º ☢Salir☢                                              (Salir del programa)                "
 echo "	---------------------------------------------------------------------------------------------"
 echo
 read -p " [*] Elige una opcion: " opc
@@ -49,5 +50,7 @@ read -p " [*] Elige una opcion: " opc
 				;;
 			7 )	bash requisitos/7.sh
 				;;
-			8 )	exit
+			8 )	bash requisitos/8.sh
+				;;
+			9 )	exit
 	esac
