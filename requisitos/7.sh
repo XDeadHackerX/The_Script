@@ -38,13 +38,13 @@ read -p " Elige una opcion: " opc1
 			2 )	read -p " Escribe la Ip del Dispositivo/Host (Ej: 192.168.1.10): " opc3
 				echo
 				echo " =========================================="
-				echo " 1-Normal (Rapido)""                        |"
+				echo " 1º-Normal (Rapido)""                        |"
 				echo " ------------------------------------------"
-				echo " 2-Normal y con guardado (Rapido)""         |"
+				echo " 2º-Normal y con guardado (Rapido)""         |"
 				echo " ------------------------------------------"
-				echo " 3-Modo Seguro (Mas Lento)""                |"
+				echo " 3º-Modo Seguro (Mas Lento)""                |"
 				echo " ------------------------------------------"
-				echo " 4-Modo Seguro y con guardado (Mas Lento)"" |"
+				echo " 4º-Modo Seguro y con guardado (Mas Lento)"" |"
 				echo " =========================================="
 				echo
 				read -p " Elige una opcion: " opc4
@@ -80,13 +80,13 @@ read -p " Elige una opcion: " opc1
 			3 )	read -p " Escribe la Ip del Dispositivo/Host (Ej: 192.168.1.10): " opc5
 				echo
 				echo " =========================================="
-				echo " 1-Normal (Rapido)""                        |"
+				echo " 1º-Normal (Rapido)""                        |"
 				echo " ------------------------------------------"
-				echo " 2-Normal y con guardado (Rapido)""         |"
+				echo " 2º-Normal y con guardado (Rapido)""         |"
 				echo " ------------------------------------------"
-				echo " 3-Modo Seguro (Mas Lento)""                |"
+				echo " 3º-Modo Seguro (Mas Lento)""                |"
 				echo " ------------------------------------------"
-				echo " 4-Modo Seguro y con guardado (Mas Lento)"" |"
+				echo " 4º-Modo Seguro y con guardado (Mas Lento)"" |"
 				echo " =========================================="
 				echo
 				read -p " Elige una opcion: " opc6
@@ -122,13 +122,13 @@ read -p " Elige una opcion: " opc1
 			4 )	read -p " Escribe la Ip del router (192.168.1.0 o 192.168.0.0): " opc7
 				echo
 				echo " =========================================="
-				echo " 1-Normal (Rapido)""                        |"
+				echo " 1º-Normal (Rapido)""                        |"
 				echo " ------------------------------------------"
-				echo " 2-Normal y con guardado (Rapido)""         |"
+				echo " 2º-Normal y con guardado (Rapido)""         |"
 				echo " ------------------------------------------"
-				echo " 3-Modo Seguro (Mas Lento)""                |"
+				echo " 3º-Modo Seguro (Mas Lento)""                |"
 				echo " ------------------------------------------"
-				echo " 4-Modo Seguro y con guardado (Mas Lento)"" |"
+				echo " 4º-Modo Seguro y con guardado (Mas Lento)"" |"
 				echo " =========================================="
 				echo
 				read -p " Elige una opcion: " opc8
