@@ -4,10 +4,6 @@ cd requisitos
 
 sudo apt-get update
 
-sudo apt install python3-pip
-
-sudo apt install python3-pip3
-
 sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
 
 sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip
@@ -15,6 +11,9 @@ sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/py
 sudo apt-get install curl
 sudo apt install git
 sudo apt install python3.8
+sudo apt install python-pip
+sudo apt install python3-pip
+sudo apt install python3-pip3
 sudo python -m pip3 install --upgrade pip
 sudo apt-get install cat
 sudo apt-get install hostname
