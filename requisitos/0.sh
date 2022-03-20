@@ -53,4 +53,6 @@ cd ..
 
 cd ..
 
+cd ..
+
 bash the_script.sh
