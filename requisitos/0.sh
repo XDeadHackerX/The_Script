@@ -4,6 +4,10 @@ cd requisitos
 
 sudo apt-get update
 
+sudo apt install python3-pip
+
+sudo apt install python3-pip3
+
 sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo python get-pip.py && sudo apt-get install python-pip
 
 sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip
@@ -45,8 +49,6 @@ sudo git clone https://github.com/laramies/theHarvester.git && cd theHarvester &
 cd ..
 		
 sudo git clone https://github.com/sherlock-project/sherlock.git && cd sherlock && sudo chmod 777 requirements.txt && sudo python3 -m pip install -r requirements.txt && cd sherlock && sudo chmod 777 sherlock.py
-
-cd ..
 
 cd ..
 
