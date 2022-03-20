@@ -39,4 +39,4 @@ The_Script
 
 (v1.7) --->   Nuevo apartado (Desencriptar un fichero).
 
-(v2.0) --->   Nuevo apartado (Ataque de Diccionario a IP), nuevo sub apartado dentro de (Ataque de Diccionario a IP) llamado "Tu Sistema Operativo", Muchas mejoras en el apartado (Escanear nuestra red) tales como hacer escaneos de los puertos y sus versiones, hacer un escaneo de los puertos y sus versiones pero de los 65.535 puertos a un Host, hacer un escaneo avanzado de la Red y escanea los 65.535 puertos de cada Host. 
+(v2.0) --->   Nuevo apartado (Ataque de Diccionario a IP), nuevo sub apartado dentro de (Ataque de Diccionario a IP) llamado "Tu Sistema Operativo", Muchas mejoras en el apartado (Escanear nuestra red) tales como hacer escaneos de los puertos y sus versiones, hacer un escaneo de los puertos y sus versiones pero de los 65.535 puertos a un Host, hacer un escaneo avanzado de la Red y escanea los 65.535 puertos de cada Host y lo mas importante la opcion de poder protegerte a la hora de hacer scaneos.
