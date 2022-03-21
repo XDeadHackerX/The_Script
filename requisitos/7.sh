@@ -62,11 +62,11 @@ read -p " Elige una opcion: " opc1
 								echo "///////////////////////////////////////////////////////"
 								;;
 							3 )	echo
-								sudo nmap -sV -O -Pn -sS -D 142.250.200.78,40.76.4.15 --spoof-mac 0 $opc3
+								sudo nmap -sV -O -Pn -sS -D 142.250.200.78,$opc3,40.76.4.15 --spoof-mac 0 $opc3
 								echo
 								;;
 							4 )	echo
-								sudo nmap -sV -O -Pn -oN $opc3.txt -sS -D 142.250.200.78,40.76.4.15 --spoof-mac 0 $opc3
+								sudo nmap -sV -O -Pn -oN $opc3.txt -sS -D 142.250.200.78,$opc3,40.76.4.15 --spoof-mac 0 $opc3
 								echo
 								echo
 								echo "///////////////////////////////////////////////////////"
@@ -104,11 +104,11 @@ read -p " Elige una opcion: " opc1
 								echo "///////////////////////////////////////////////////////"
 								;;
 							3 )	echo
-								sudo nmap -sV -O -p "*" -Pn -sS -D 142.250.200.78,40.76.4.15 --spoof-mac 0 $opc5
+								sudo nmap -sV -O -p "*" -Pn -sS -D 142.250.200.78,$opc5,40.76.4.15 --spoof-mac 0 $opc5
 								echo
 								;;
 							4 )	echo
-								sudo nmap -sV -O -p "*" -Pn -oN $opc5.txt -sS -D 142.250.200.78,40.76.4.15 --spoof-mac 0 $opc5
+								sudo nmap -sV -O -p "*" -Pn -oN $opc5.txt -sS -D 142.250.200.78,$opc5,40.76.4.15 --spoof-mac 0 $opc5
 								echo
 								echo
 								echo "///////////////////////////////////////////////////////"
@@ -146,11 +146,11 @@ read -p " Elige una opcion: " opc1
 								echo "///////////////////////////////////////////////////////"
 								;;
 							3 )	echo
-								sudo nmap -v -sV -O -p "*" -Pn -sS -D 142.250.200.78,40.76.4.15 --spoof-mac 0 $opc7
+								sudo nmap -v -sV -O -p "*" -Pn -sS -D 142.250.200.78,$opc7,40.76.4.15 --spoof-mac 0 $opc7
 								echo
 								;;
 							4 )	echo
-								sudo nmap -v -sV -O -p "*" -Pn -oN $opc7.txt -sS -D 142.250.200.78,40.76.4.15 --spoof-mac 0 $opc7
+								sudo nmap -v -sV -O -p "*" -Pn -oN $opc7.txt -sS -D 142.250.200.78,$opc7,40.76.4.15 --spoof-mac 0 $opc7
 								echo
 								echo
 								echo "///////////////////////////////////////////////////////"
