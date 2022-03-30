@@ -2,7 +2,7 @@ The_Script
 
 > Herramienta creada por XDeadHackerX
 
-[![The-Script-2-0.png](https://i.postimg.cc/FKRTdg6t/The-Script-2-0.png)](https://postimg.cc/cvpRPYZT)
+[![The-Script-2-2.png](https://i.postimg.cc/Xqw5wHFR/The-Script-2-2.png)](https://postimg.cc/ctL6WcFh)
 
 
 ## Instalar Herramienta
@@ -41,4 +41,4 @@ The_Script
 
 (v2.0) --->   Nuevo apartado (Ataque de Diccionario a IP), nuevo sub apartado dentro de (Informacion sobre la tarjeta de Red + Velocidad) llamado "Tu Sistema Operativo", Muchas mejoras en el apartado (Escanear nuestra red) tales como hacer escaneos de los puertos y sus versiones, hacer un escaneo de los puertos y sus versiones pero de los 65.535 puertos a un Host, hacer un escaneo avanzado de la Red y escanea los 65.535 puertos de cada Host y lo mas importante la opcion de poder protegerte a la hora de hacer scaneos.
 
-(v2.2) --->   Nuevo apartado (), pequeña mejora en el menu Principal, 
+(v2.2) --->   Nuevo apartado (Tarjera de Red), dentro de esta se puede Activar y Desactivar el Modo Monitor de una Tarjeta de Red, cambiar la MAC para hacer ataques seguros, escanear Redes Wifi de los aldederos y poder ver informacion tal como WIFI= [BSSID, PWR, Beacons, Data, Canal, MB de trafico, Encriptado de la Red Wifi, CIPHER, AUTH, ESSID] Usuarios de las Redes= [BSSID, STATION, PWR, Rate, Lost, Frames, Notes, Probes (Red a la que estan conectados)], pequeña mejora en el menu Principal.
