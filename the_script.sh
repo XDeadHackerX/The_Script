@@ -12,7 +12,7 @@ echo "	           ░░░╚═╝░░░╚═╝░░╚═╝╚══�
 echo
 echo "				               (⌐■_■)– ︻デ═一"
 echo "			     __________________________________________________"					
-echo "		     	       ︻デ═一  Created by: XDeadHackerX v2.0  ︻デ═一 " 
+echo "		     	       ︻デ═一  Created by: XDeadHackerX v2.2  ︻デ═一 " 
 echo "         -------------------------------------------------------------------------------------------"
 echo "         Cualquier acción y o actividad relacionada con The_Script es únicamente su responsabilidad"
 echo "         -------------------------------------------------------------------------------------------"
@@ -20,16 +20,17 @@ echo
 echo
 echo "	[*] Elige una de las siguientes opciones: "
 echo "	---------------------------------------------------------------------------------------------"
-echo "	0º Instalar requisitos        		                (Marcar la 1º vez)	             "
-echo "	1º Informacion sobre la tarjeta de Red + Velocidad	(Toda la Informacion necesaria)      "
-echo "	2º Informacion de una Pagina Web		        (Info Tecnologias y del Propietario) "
-echo "	3º Informacion de una Empresa				(Emails/Trabajadores/Dominios)       "
-echo "	4º Informacion de una Persona    			(Instagram/Email/Nick)	             "
-echo "	5º Ataque de Diccionario a IP		                (Extraer Usuario y Contraseña IP)    "
-echo "	6º Desencriptar un fichero		               	(Desencriptar un .zip, .rar, fichero)"
-echo "	7º Escanear nuestra red		               	        (Ver los host conectados)            "
-echo "	8º Metadatos		               	                (Extraerlos y o eliminarlos)         "            
-echo "	9º ☢Salir☢                                              (Salir del programa)                "
+echo "	0º  Instalar requisitos        		                (Marcar la 1º vez)	             "
+echo "	1º  Informacion sobre la tarjeta de Red + Velocidad	(Toda la Informacion necesaria)      "
+echo "	2º  Informacion de una Pagina Web		        (Info Tecnologias y del Propietario) "
+echo "	3º  Informacion de una Empresa				(Emails/Trabajadores/Dominios)       "
+echo "	4º  Informacion de una Persona    			(Instagram/Email/Nick)	             "
+echo "	5º  Ataque de Diccionario a IP		                (Extraer Usuario y Contraseña IP)    "
+echo "	6º  Desencriptar un fichero		               	(Desencriptar un .zip, .rar, fichero)"
+echo "	7º  Escanear nuestra red		       	        (Ver los host conectados)            "
+echo "	8º  Tarjera de Red		               	        (Configuracion y utilidades)         "
+echo "	9º  Metadatos	               	                        (Extraerlos y o eliminarlos)         "            
+echo "	10º ☢Salir☢                                             (Salir del programa)                "
 echo "	---------------------------------------------------------------------------------------------"
 echo
 read -p " [*] Elige una opcion: " opc
@@ -52,5 +53,12 @@ read -p " [*] Elige una opcion: " opc
 				;;
 			8 )	bash requisitos/8.sh
 				;;
-			9 )	exit
+			9 )	bash requisitos/9.sh
+				;;
+			10 )	exit
+				;;
+			* )	echo
+				echo "$RRPLY No es una opcion valida"
+				sleep 3
+				bash the_script.sh
 	esac
