@@ -18,34 +18,26 @@ echo "         Cualquier acción y o actividad relacionada con The_Script es ún
 echo "         -------------------------------------------------------------------------------------------"
 echo
 echo
-echo " [*] Encontrar Redes Sociales"
+echo " [*] Metadatos"
 echo
-echo " ============================================================================"
-echo " 1º Informacion sobre una cuenta de Instagram (100% de Efectividad)""          |"
-echo " ----------------------------------------------------------------------------"
-echo " 2º Ver donde esta registrado un Email (95% de Efectividad)""                  |"
-echo " ----------------------------------------------------------------------------"
-echo " 3º Buscar la URL de las redes sociales donde esta registrado un Email (50%)"" |"
-echo " ============================================================================"
+echo " ========================================="
+echo " 1º Extraer Metadatos de un fichero""      |"
+echo " -----------------------------------------"
+echo " 2º Eliminar Metadatos de un fichero""     |"
+echo " -----------------------------------------"
+echo " 3º Eliminar Metadatos de un directorio""  |"
+echo " ========================================="
 echo
-read -p " Elige una opcion: " opc1
-	case $opc1 in
-			1 )	read -p " Escribe el nombre de la cuenta de Instagram del Objetivo : " info
-				echo
-				cd requisitos/osi.ig && sudo python3 main.py -u $info
-				cd ..
-				cd ..
+read -p " Elige una opcion: " opc
+	case $opc in
+			1 )	read -p " Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " meta
+				sudo exiftool -v -s -G $meta
 				;;
-			2 )	read -p " Escribe el Correo Electronico del Objetivo [Gmail, Yahoo, Outlook] : " info
-				echo
-				sudo holehe --only-used $info
+			2 )	read -p " Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " meta
+				sudo exiftool -r -overwrite_original -all= $meta
 				;;
-			3 )	echo " Pon uno de los siguientes datos del Objetivo [Nombre completo o Correo electrónico o Nick  o Número de Teléfono o Red Social]"
-				echo
-				sleep 2
-				sudo bash requisitos/userrecon.sh $info
-				echo
-				echo "[*] Los .txt con la informacion substraida se encuentra en la ruta (the_script/$info.txt)"
+			3 )	read -p " Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/prueba/): " meta
+				sudo exiftool -r -overwrite_original -all= $meta
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
@@ -57,11 +49,11 @@ echo " 2-Volver a ejecutar"
 echo " 3-Salir"
 echo " ==================="
 echo
-read -p "Elige una opcion: " opc2
+read -p " Elige una opcion: " opc2
 	case $opc2 in
 			1 )	bash the_script.sh
 				;;
-			2 )	bash requisitos/4.sh
+			2 )	bash requisitos/8.sh
 				;;
 			3 )	exit && clear
 				;;
