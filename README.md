@@ -2,7 +2,7 @@ The_Script
 
 > Herramienta creada por XDeadHackerX
 
-[![The-Script-2-2.png](https://i.postimg.cc/Xqw5wHFR/The-Script-2-2.png)](https://postimg.cc/ctL6WcFh)
+[![The-Script-2-1.png](https://i.postimg.cc/FzYyFqMB/The-Script-2-1.png)](https://postimg.cc/Pvkp26rW)
 
 
 ## Instalar Herramienta
