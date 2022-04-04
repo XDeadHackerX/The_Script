@@ -75,7 +75,6 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								;;
 							2 )	echo
-								sudo ifconfig wlan0 promisc
 								sudo ifconfig wlan0mon promisc
 								sudo ifconfig wlan0mon down
 								sudo macchanger -a wlan0mon
