@@ -30,6 +30,7 @@ sudo apt-get install python3
 sudo apt-get install exiftool
 sudo apt-get install -y netdiscover
 sudo pip install shodan
+sudo apt install aircrack-ng
 
 
 sudo rm -r theHarvester
