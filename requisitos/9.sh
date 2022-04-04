@@ -49,11 +49,11 @@ echo " 2-Volver a ejecutar"
 echo " 3-Salir"
 echo " ==================="
 echo
-read -p " Elige una opcion: " opc2
-	case $opc2 in
+read -p " Elige una opcion: " opc1
+	case $opc1 in
 			1 )	bash the_script.sh
 				;;
-			2 )	bash requisitos/8.sh
+			2 )	bash requisitos/9.sh
 				;;
 			3 )	exit && clear
 				;;
