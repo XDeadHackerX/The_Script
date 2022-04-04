@@ -33,7 +33,15 @@ echo
 read -p " Elige una opcion: " opc1
 	case $opc1 in
 			1 )	read -p " Escribe la Ip de Red (192.168.1.0 o 192.168.0.0): " opc2
-				netdiscover -r $opc2/24 -P
+				read -p " Quieres ver el trafico de forma continua? (y/n): " opc3
+				echo
+					if [ $opc3 = y ]
+						then
+							netdiscover -r $opc2/24
+						else
+							netdiscover -r $opc2/24 -P
+					fi
+				echo
 				;;
 			2 )	read -p " Escribe la Ip del Dispositivo/Host (Ej: 192.168.1.10): " opc3
 				echo
