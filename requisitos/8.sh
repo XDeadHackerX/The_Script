@@ -32,28 +32,28 @@ read -p " Elige una opcion: " opc
 	case $opc in
 			1 )	echo
 				echo " ==================================================="
-				echo " 1º Activar Modo Monitor""                           |"
+				echo " 1º Activar Modo Monitor + Seguridad""               |"
 				echo " ---------------------------------------------------"
-				echo " 2º Cambiar la Mac de la tajeta de red (Seguridad)"" |"
-				echo " ---------------------------------------------------"
-				echo " 3º Desactivar Modo Monitor, Mac y restablecerla""   |"
+				echo " 2º Desactivar Modo Monitor, Mac y restablecerla""   |"
 				echo " ==================================================="
 				echo
 				read -p " Elige una opcion: " opc
 					case $opc in
 							1 )	echo
-								sudo ifconfig wlan0 promisc
-								sudo airmon-ng start wlan0
+								sudo airmon-ng
 								echo
-								read -p " Cortar la salida a internet para evitar futuros errores? (si/no): " opc1
+								read -p "Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
+								read -p "Cortar la salida a internet para evitar futuros errores? (y/n): " opc1
 								echo
-									if [ $opc1 = si ]
-										then
-											sudo airmon-ng check kill
-										else
-											echo " OK"
-									fi
+								if [ $opc1 = y ]
+									then
+										sudo airmon-ng check kill
+									else
+										echo "OK"
+								fi
 								echo
+								echo "======================="
+								echo "Activando Modo Monitor"
 								echo "======================="
 								echo "--->""                  |"
 								sleep 1
@@ -63,6 +63,24 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								echo "--------------------->""|"
 								echo "======================="
+								sudo ifconfig $interfaz promisc
+								sudo airmon-ng start $interfaz
+								echo "======================="
+								echo " Activando Modo Seguro"
+								echo "======================="
+								echo "--->""                  |"
+								sleep 1
+								echo "-------->""             |"
+								sleep 1
+								echo "--------------->""      |"
+								sleep 1
+								echo "--------------------->""|"
+								echo "======================="
+								echo
+								sudo ifconfig "${interfaz}mon" promisc
+								sudo ifconfig "${interfaz}mon" down
+								sudo macchanger -a "${interfaz}mon"
+								sudo ifconfig "${interfaz}mon" up
 								sleep 1
 								clear
 								echo
@@ -75,58 +93,27 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								;;
 							2 )	echo
-								sudo ifconfig wlan0mon promisc
-								sudo ifconfig wlan0mon down
-								sudo macchanger -a wlan0mon
-								sudo ifconfig wlan0mon up
+								echo "=============================="
+								echo "        Desactivando"
+								echo "Ataque/Modo Monitor/Seguridad"
+								echo "=============================="
+								echo "-------->""                    |"
+								sleep 1
+								echo "--------------->""             |"
+								sleep 1
+								echo "---------------------->""      |"
+								sleep 1
+								echo "---------------------------->""|"
+								echo "=============================="
 								echo
-								echo "======================="
-								echo "--->""                  |"
-								sleep 1
-								echo "-------->""             |"
-								sleep 1
-								echo "--------------->""      |"
-								sleep 1
-								echo "--------------------->""|"
-								echo "======================="
-								sleep 1
-								clear
-								echo
-								echo "=============================================================================="
-								echo "                                     LISTO"
-								echo "=============================================================================="
-								echo
-								sudo iwconfig
-								echo "=============================================================================="
-								sleep 1
-								;;
-							3 )	echo
-								sudo ifconfig wlan0mon down
-								sudo macchanger -p wlan0mon
-								sudo ifconfig wlan0mon up
-								sudo ifconfig wlan0mon -promisc
-								sudo airmon-ng stop wlan0mon
-								sudo ifconfig wlan0 -promisc
+								sudo ifconfig "${interfaz}mon" down
+								sudo macchanger -p "${interfaz}mon"
+								sudo ifconfig "${interfaz}mon" up
+								sleep 2
+								sudo ifconfig "${interfaz}mon" -promisc
+								sudo airmon-ng stop "${interfaz}mon"
+								sudo ifconfig $interfaz -promisc
 								sudo systemctl restart NetworkManager.service
-								echo
-								echo "======================="
-								echo "--->""                  |"
-								sleep 1
-								echo "-------->""             |"
-								sleep 1
-								echo "--------------->""      |"
-								sleep 1
-								echo "--------------------->""|"
-								echo "======================="
-								sleep 1
-								clear
-								echo
-								echo "=============================================================================="
-								echo "                                     LISTO"
-								echo "=============================================================================="
-								echo
-								sudo iwconfig
-								echo "=============================================================================="
 								;;
 							* )	echo
 								echo "$RRPLY No es una opcion valida"
