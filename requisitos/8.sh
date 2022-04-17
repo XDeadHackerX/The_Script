@@ -65,6 +65,9 @@ read -p " Elige una opcion: " opc
 								echo "======================="
 								sudo ifconfig $interfaz promisc
 								sudo airmon-ng start $interfaz
+								echo
+								read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+								echo
 								echo "======================="
 								echo " Activando Modo Seguro"
 								echo "======================="
@@ -77,10 +80,10 @@ read -p " Elige una opcion: " opc
 								echo "--------------------->""|"
 								echo "======================="
 								echo
-								sudo ifconfig "${interfaz}mon" promisc
-								sudo ifconfig "${interfaz}mon" down
-								sudo macchanger -a "${interfaz}mon"
-								sudo ifconfig "${interfaz}mon" up
+								sudo ifconfig $interfaz2 promisc
+								sudo ifconfig $interfaz2 down
+								sudo macchanger -a $interfaz2
+								sudo ifconfig $interfaz2 up
 								sleep 1
 								clear
 								echo
@@ -93,6 +96,9 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								;;
 							2 )	echo
+								read -p "Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
+								read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+								echo
 								echo "=============================="
 								echo "        Desactivando"
 								echo "Ataque/Modo Monitor/Seguridad"
@@ -106,12 +112,12 @@ read -p " Elige una opcion: " opc
 								echo "---------------------------->""|"
 								echo "=============================="
 								echo
-								sudo ifconfig "${interfaz}mon" down
-								sudo macchanger -p "${interfaz}mon"
-								sudo ifconfig "${interfaz}mon" up
+								sudo ifconfig $interfaz2 down
+								sudo macchanger -p $interfaz2
+								sudo ifconfig $interfaz2 up
 								sleep 2
-								sudo ifconfig "${interfaz}mon" -promisc
-								sudo airmon-ng stop "${interfaz}mon"
+								sudo ifconfig $interfaz2 -promisc
+								sudo airmon-ng stop $interfaz2
 								sudo ifconfig $interfaz -promisc
 								sudo systemctl restart NetworkManager.service
 								;;
