@@ -25,13 +25,13 @@
 
 ## Versiones
 
-(v1.0) --->   Versión Original
+(v1.0) --->   Versión Original.
 
-(v1.2) --->   Nuevo apartado (Información de una web), Corrección de errores
+(v1.2) --->   Nuevo apartado (Información de una web), Corrección de errores.
 
-(v1.3) --->   Nuevo apartado (Metadatos), Cambios en el diseño (Renovación a la hora de ver el Script y leer los apartados)
+(v1.3) --->   Nuevo apartado (Metadatos), Cambios en el diseño (Renovación a la hora de ver el Script y leer los apartados).
 
-(v1.4) --->   Nuevo apartado (Información de una empresa), Mejoras en el diseño, Corrección de errores
+(v1.4) --->   Nuevo apartado (Información de una empresa), Mejoras en el diseño, Corrección de errores.
 
 (v1.5) --->   Nuevo apartado (Escanear nuestra red), Mejoras en el apartado de (Información de una empresa), Mejoras en la eficiencia del código, Mejoras en el diseño, Cambios en el apartado (Información de una Página Web), Eliminación de apartado (Información de un número de teléfono) por su mal funcionamiento.
 
