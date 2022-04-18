@@ -66,7 +66,7 @@ read -p " Elige una opcion: " opc
 								sudo ifconfig $interfaz promisc
 								sudo airmon-ng start $interfaz
 								echo
-								read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+								read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 								echo
 								echo "======================="
 								echo " Activando Modo Seguro"
@@ -97,7 +97,7 @@ read -p " Elige una opcion: " opc
 								;;
 							2 )	echo
 								read -p "Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
-								read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+								read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 								echo
 								echo "=============================="
 								echo "        Desactivando"
@@ -135,7 +135,7 @@ read -p " Elige una opcion: " opc
 				echo "=============================================================================="
 				;;
 			3 )	echo
-				read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+				read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 				echo
 				sudo airodump-ng $interfaz2
 				;;
