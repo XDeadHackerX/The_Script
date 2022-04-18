@@ -147,7 +147,7 @@ read -p " Elige una opcion: " opc
 			3 )	echo
 				read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 				echo
-				sudo airodump-ng $interfaz2
+				sudo airodump-ng $interfaz2 --band abg
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
