@@ -120,6 +120,16 @@ read -p " Elige una opcion: " opc
 								sudo airmon-ng stop $interfaz2
 								sudo ifconfig $interfaz -promisc
 								sudo systemctl restart NetworkManager.service
+								sleep 1
+								clear
+								echo
+								echo "=============================================================================="
+								echo "                                    LISTO"
+								echo "=============================================================================="
+								echo
+								sudo iwconfig
+								echo "=============================================================================="
+								sleep 1
 								;;
 							* )	echo
 								echo "$RRPLY No es una opcion valida"
