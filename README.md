@@ -5,7 +5,7 @@
 [![The-Script-2-1.png](https://i.postimg.cc/FzYyFqMB/The-Script-2-1.png)](https://postimg.cc/Pvkp26rW)
 
 
-## Instalar Herramienta
+## 🛠 Instalar Herramienta 🛠
 
 1) sudo apt update && apt -y full-upgrade
 
@@ -23,7 +23,7 @@
 
 8) Ya podemos disfrutar de la herramienta
 
-## Versiones
+## 🔎 Versiones 🔎
 
 (v1.0) --->   Versión Original.
 
