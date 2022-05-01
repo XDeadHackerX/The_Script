@@ -1,4 +1,4 @@
-# The_Script
+# ☠ The_Script ☠
 
 > Herramienta creada por XDeadHackerX
 
