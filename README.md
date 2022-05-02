@@ -43,4 +43,4 @@
 
 (v2.1) --->   Nuevo apartado (Tarjera de Red), dentro de esta se puede Activar y Desactivar el Modo Monitor de una Tarjeta de Red, cambiar la MAC para hacer ataques seguros, escanear Redes Wifi de los aldederos y poder ver informacion tal como WIFI= [BSSID, PWR, Beacons, Data, Canal, MB de trafico, Encriptado de la Red Wifi, CIPHER, AUTH, ESSID] Usuarios de las Redes= [BSSID, STATION, PWR, Rate, Lost, Frames, Notes, Probes (Red a la que estan conectados)], pequeña mejora en el menu Principal.
 
-Copyright © 2022, XDeadHackerX
+**Copyright © 2022, XDeadHackerX**
