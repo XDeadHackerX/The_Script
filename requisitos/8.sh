@@ -26,6 +26,8 @@ echo " -----------------------------------------------------------"
 echo " 2º Ver estado de la Tarjeta de Red""                        |"
 echo " -----------------------------------------------------------"
 echo " 3º Escanear Wifi de los alrededores (Informacion avanzada)""|"
+echo " -----------------------------------------------------------"
+echo " 4º Escanear dispositivos conectados a un Wifi Ajeno""|"
 echo " ==========================================================="
 echo
 read -p " Elige una opcion: " opc
@@ -42,16 +44,17 @@ read -p " Elige una opcion: " opc
 							1 )	echo
 								sudo airmon-ng
 								echo
-								read -p "Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
-								read -p "Cortar la salida a internet para evitar futuros errores? (y/n): " opc1
+								read -p "[*] Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
+								read -p "[*] Cortar la salida a internet para evitar futuros errores? (y/n): " opc2
 								echo
-								if [ $opc1 = y ]
+								if [ $opc2 = y ]
 									then
-										sudo airmon-ng check kill
+										sudo airmon-ng check kill >/dev/null
 									else
-										echo "OK"
+								echo "OK"
 								fi
-								echo
+								sudo ifconfig $interfaz promisc >/dev/null
+								sudo airmon-ng start $interfaz >/dev/null
 								echo "======================="
 								echo "Activando Modo Monitor"
 								echo "======================="
@@ -63,11 +66,14 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								echo "--------------------->""|"
 								echo "======================="
-								sudo ifconfig $interfaz promisc
-								sudo airmon-ng start $interfaz
+								sudo airmon-ng 
 								echo
-								read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+								read -p "[*] Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 								echo
+								sudo ifconfig $interfaz2 promisc >/dev/null
+								sudo ifconfig $interfaz2 down >/dev/null
+								sudo macchanger -a $interfaz2 >/dev/null
+								sudo ifconfig $interfaz2 up >/dev/null
 								echo "======================="
 								echo " Activando Modo Seguro"
 								echo "======================="
@@ -79,12 +85,6 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								echo "--------------------->""|"
 								echo "======================="
-								echo
-								sudo ifconfig $interfaz2 promisc
-								sudo ifconfig $interfaz2 down
-								sudo macchanger -a $interfaz2
-								sudo ifconfig $interfaz2 up
-								sleep 1
 								clear
 								echo
 								echo "=============================================================================="
@@ -99,6 +99,15 @@ read -p " Elige una opcion: " opc
 								read -p "Escribe la Interfaz de la Tarjeta de Red (Ej: wlan0): " interfaz
 								read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 								echo
+								echo "[#] Desactivando Ataque y Protocolos"
+								echo
+								sudo ifconfig $interfaz2 down >/dev/null
+								sudo macchanger -p $interfaz2 >/dev/null
+								sudo ifconfig $interfaz2 up >/dev/null
+								sudo ifconfig $interfaz2 -promisc >/dev/null
+								sudo airmon-ng stop $interfaz2 >/dev/null
+								sudo ifconfig $interfaz -promisc >/dev/null
+								sudo systemctl restart NetworkManager.service >/dev/null
 								echo "=============================="
 								echo "        Desactivando"
 								echo "Ataque/Modo Monitor/Seguridad"
@@ -111,16 +120,6 @@ read -p " Elige una opcion: " opc
 								sleep 1
 								echo "---------------------------->""|"
 								echo "=============================="
-								echo
-								sudo ifconfig $interfaz2 down
-								sudo macchanger -p $interfaz2
-								sudo ifconfig $interfaz2 up
-								sleep 2
-								sudo ifconfig $interfaz2 -promisc
-								sudo airmon-ng stop $interfaz2
-								sudo ifconfig $interfaz -promisc
-								sudo systemctl restart NetworkManager.service
-								sleep 1
 								clear
 								echo
 								echo "=============================================================================="
@@ -145,9 +144,24 @@ read -p " Elige una opcion: " opc
 				echo "=============================================================================="
 				;;
 			3 )	echo
+				sudo airmon-ng
 				read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 				echo
 				sudo airodump-ng $interfaz2 --band abg
+				;;
+			4 )	echo
+				sudo airmon-ng
+				read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
+				echo
+				sudo wash -2 -5 -a -i $interfaz2
+				read -p "[*] Copia el BSSID del Wifi Objetivo y pegelo a continuacion: " bssid
+				read -p "[*] Copia el Canal (Ch) del Wifi Objetivo y pegelo a continuacion: " ch
+				echo
+				sleep 1
+				echo "Listo"
+				echo "Pulse Ctrl + c para finalizar el Scaneo"
+				sleep 3
+				sudo airodump-ng -c $ch --bssid $bssid $interfaz2 --band abg
 				;;
 			* )	echo
 				echo "$RRPLY No es una opcion valida"
