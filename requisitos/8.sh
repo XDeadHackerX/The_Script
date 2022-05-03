@@ -27,7 +27,7 @@ echo " 2º Ver estado de la Tarjeta de Red""                        |"
 echo " -----------------------------------------------------------"
 echo " 3º Escanear Wifi de los alrededores (Informacion avanzada)""|"
 echo " -----------------------------------------------------------"
-echo " 4º Escanear dispositivos conectados a un Wifi Ajeno""|"
+echo " 4º Escanear dispositivos conectados a un Wifi Ajeno""       |"
 echo " ==========================================================="
 echo
 read -p " Elige una opcion: " opc
