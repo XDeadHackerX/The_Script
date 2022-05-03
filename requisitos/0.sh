@@ -32,6 +32,7 @@ sudo apt-get install -y netdiscover
 sudo pip install shodan
 sudo apt install aircrack-ng
 sudo apt-get install gnome-terminal
+sudo apt-get install bettercap
 
 
 sudo rm -r theHarvester

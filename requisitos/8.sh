@@ -147,7 +147,26 @@ read -p " Elige una opcion: " opc
 				sudo airmon-ng
 				read -p "Escribe la Interfaz de la Tarjeta de Red en modo Monitor (Ej: wlan0mon o wlan0): " interfaz2
 				echo
-				sudo airodump-ng $interfaz2 --band abg
+				echo "==========================="
+				echo "[1] Escaner con Aircrack-ng"
+				echo "[2] Escaner con Bettercap"
+				echo "[3] Escaner con Wash"
+				echo "==========================="
+				echo
+				read -p "Elige una opcion: " opc4
+					case $opc4 in
+							1 )	echo
+								sudo airodump-ng $interfaz2 --band abg
+								;;
+							2 )	echo
+								sudo bettercap -iface $interfaz2 -eval 'set ticker.commands "clear; wifi.show"; wifi.recon on; ticker on'
+								;;
+							3 )	echo
+								sudo wash -2 -5 -a -i $interfaz2
+								;;
+							* )	echo
+								echo "$RRPLY No es una opcion valida"
+					esac
 				;;
 			4 )	echo
 				sudo airmon-ng
