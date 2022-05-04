@@ -43,10 +43,10 @@
 
 (v2.1) --->   Nuevo apartado (Tarjera de Red), dentro de esta se puede Activar y Desactivar el Modo Monitor de una Tarjeta de Red, cambiar la MAC para hacer ataques seguros, escanear Redes Wifi de los aldederos y poder ver informacion tal como WIFI= [BSSID, PWR, Beacons, Data, Canal, MB de trafico, Encriptado de la Red Wifi, CIPHER, AUTH, ESSID] Usuarios de las Redes= [BSSID, STATION, PWR, Rate, Lost, Frames, Notes, Probes (Red a la que estan conectados)], pequeña mejora en el menu Principal. Mejora en el Apartado (Tarjeta de Red), en el subapartado "Escanear Wifi de los alrededores" dandote a escoger entre 3 Herramientas para hacer el Escaneo (Aircrack-ng, Bettercap, Wash).Optimización del código, mejoras visuales, solución de errores.
 
-## 🥷 Creado por XDeadHackerX 🥷
+### 🥷 Creado por XDeadHackerX 🥷
 
-Si consideras que este proyecto ha sido útil, te agradecería que me apoyaras dándole una estrella a este repo o invitándome a un café.
+**Si consideras que este proyecto ha sido útil, te agradecería que me apoyaras dándole una estrella a este repo o invitándome a un café.**
 
-https://www.buymeacoffee.com/XDeadHackerX
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/XDeadHackerX)
 
-**Copyright © 2022, XDeadHackerX**
+Copyright © 2022, XDeadHackerX
