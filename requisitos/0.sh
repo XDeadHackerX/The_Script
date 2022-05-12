@@ -9,30 +9,31 @@ sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo pyt
 sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip
 
 sudo apt-get install curl
-sudo apt install git
-sudo apt install python3.8
-sudo apt install python-pip
-sudo apt install python3-pip
-sudo apt install python3-pip3
+sudo apt install git -y
+sudo apt install python3.8 -y
+sudo apt install python-pip -y
+sudo apt install python3-pip -y
+sudo apt install python3-pip3 -y
 sudo python -m pip3 install --upgrade pip
-sudo apt-get install cat
-sudo apt-get install hostname
-sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
-sudo apt-get install speedtest
-sudo pip install speedtest-cli
+sudo apt-get install cat -y
+sudo apt-get install hostname -y
+sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash 
+sudo apt-get install speedtest -y
+sudo pip install speedtest-cli -y
 sudo pip3 install holehe
-sudo apt-get install john
-sudo apt-get install nmap
-sudo apt-get install whatweb
-sudo apt-get install whois
-sudo apt-get install dmitry
-sudo apt-get install python3
-sudo apt-get install exiftool
-sudo apt-get install -y netdiscover
-sudo pip install shodan
-sudo apt install aircrack-ng
-sudo apt-get install gnome-terminal
-sudo apt-get install bettercap
+sudo apt-get install john -y
+sudo apt-get install nmap -y
+sudo apt-get install whatweb -y
+sudo apt-get install whois -y
+sudo apt-get install dmitry -y
+sudo apt-get install python3 -y
+sudo apt-get install exiftool -y
+sudo apt-get install -y netdiscover 
+sudo pip install shodan -y
+sudo apt install aircrack-ng -y
+sudo apt-get install gnome-terminal -y
+sudo apt-get install bettercap -y
+sudo apt install macchanger -y
 
 
 sudo rm -r theHarvester
