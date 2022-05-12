@@ -8,7 +8,7 @@ sudo curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py && sudo pyt
 
 sudo apt-get install python3-pip  && sudo python3 get-pip.py && sudo /usr/bin/python3 -m pip install --upgrade pip
 
-sudo apt-get install curl
+sudo apt-get install curl -y
 sudo apt install git -y
 sudo apt install python3.8 -y
 sudo apt install python-pip -y
@@ -19,7 +19,7 @@ sudo apt-get install cat -y
 sudo apt-get install hostname -y
 sudo curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash 
 sudo apt-get install speedtest -y
-sudo pip install speedtest-cli -y
+sudo pip install speedtest-cli
 sudo pip3 install holehe
 sudo apt-get install john -y
 sudo apt-get install nmap -y
@@ -29,7 +29,7 @@ sudo apt-get install dmitry -y
 sudo apt-get install python3 -y
 sudo apt-get install exiftool -y
 sudo apt-get install -y netdiscover 
-sudo pip install shodan -y
+sudo pip install shodan
 sudo apt install aircrack-ng -y
 sudo apt-get install gnome-terminal -y
 sudo apt-get install bettercap -y
